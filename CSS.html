@@ -17,32 +17,54 @@
       h1 {
         font-size:45px;
         text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding: 20px;
       }
+       ol {
+         border-right: 1px solid gray;
+         width: 100px;
+         margin:0;
+         padding:20px;
+       }
+       body {
+         margin:0;
+       }
+       #grid {
+         display: grid;
+         grid-template-columns: 150px 1fr;
+       }
+       #article {
+         padding-left: 10px;
+       }
   </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <a href="html.html" class="saw"><li>HTML</li></a>
-    <a href="CSS.html" class="saw" id="active"><li>CSS</li></a>
-    <a href="javascript.html"><li>JavaScript</li></a>
-  </ol>
+  <div id="grid">
+    <ol>
+      <a href="html.html" class="saw"><li>HTML</li></a>
+      <a href="CSS.html" class="saw" id="active"><li>CSS</li></a>
+      <a href="javascript.html"><li>JavaScript</li></a>
+    </ol>
 
-  <!--
-  <h1><a href="index.html"><font color="red">WEB</font></a></h1>
-  <ol>
-    <a href="html.html"><li><font color="red">HTML</font></li></a>
-    <a href="CSS.html"><li><font color="red">CSS</font></li></a>
-    <a href="javascript.html"><li><font color="red">JavaScript</font></li></a>
-  </ol>
-  -->
-
-  <h2>CSS</h2>
-  <p>Cascading Style Sheets (CSS) is a style sheet language<br>
-    used for describing the presentation of a document written in a markup language<br>
-    such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML<br>
-    and JavaScript. CSS is designed to enable the separation of presentation and content,<br>
-    including layout, colors, and fonts.[3] This separation can improve content accessibility,<br>
-    provide more flexibility and control in the specification of presentation characteristics,<br>
-    enable multiple web pages to share formatting by specifying the relevant CSS in a separate.</p>
+    <!--
+    <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+    <ol>
+      <a href="html.html"><li><font color="red">HTML</font></li></a>
+      <a href="CSS.html"><li><font color="red">CSS</font></li></a>
+      <a href="javascript.html"><li><font color="red">JavaScript</font></li></a>
+    </ol>
+    -->
+    <div id="article">
+      <h2>CSS</h2>
+      <p>Cascading Style Sheets (CSS) is a style sheet language<br>
+        used for describing the presentation of a document written in a markup language<br>
+        such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML<br>
+        and JavaScript. CSS is designed to enable the separation of presentation and content,<br>
+        including layout, colors, and fonts.[3] This separation can improve content accessibility,<br>
+        provide more flexibility and control in the specification of presentation characteristics,<br>
+        enable multiple web pages to share formatting by specifying the relevant CSS in a separate.</p>
+      </div>
+    </div>
 </body>
